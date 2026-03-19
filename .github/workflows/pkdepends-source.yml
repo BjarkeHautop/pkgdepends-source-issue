@@ -19,12 +19,6 @@ jobs:
           extra-packages: remotes
 
       - uses: actions/checkout@v4
-
-      - name: Install pak (dev version)
-        run: |
-            R -e '
-            remotes::install_github("r-lib/pak")
-            packageVersion("pak")
             '
       - name: Install pkgdepends (dev version)
         run: |
