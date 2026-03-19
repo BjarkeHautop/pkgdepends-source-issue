@@ -19,7 +19,7 @@ jobs:
           extra-packages: remotes
 
       - uses: actions/checkout@v6
-      
+
       - name: Install pkgdepends (dev version)
         run: |
             R -e '
@@ -29,6 +29,5 @@ jobs:
       - name: Hangs forever
         run: |
           R -e '
-          options(repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/jammy/latest"))
           source("pkgdepends-source.R", echo = TRUE)
           '

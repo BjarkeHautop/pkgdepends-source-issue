@@ -1,6 +1,6 @@
 pid <- pkgdepends:::new_pkg_installation_proposal(
   "cli=?source",
-  config = list(library = tempfile(), dependencies = TRUE)
+  config = list(library = tempfile())
 )
 
 pid
