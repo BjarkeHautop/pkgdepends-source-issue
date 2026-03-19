@@ -1,4 +1,4 @@
-name: pak-mwe
+name: pkgdepends-source
 
 on:
   push:
